@@ -50,20 +50,20 @@ CollabFlow is engineered for cross-functional engineering and product teams to p
 mern-starter/
 ├── backend/
 │   ├── config/
-│   │   └── db.js                        # MongoDB connection & lifecycle management
+│   │   └── db.js                        
 │   ├── model/
-│   │   ├── User.js                      # User schema with bcrypt password hashing
-│   │   ├── Project.js                   # Project schema with manager references
-│   │   ├── ProjectMember.js             # Unique compound indexed project membership
-│   │   ├── Task.js                      # Task schema with atomic numeric versioning
-│   │   └── Comment.js                   # Task comments schema
+│   │   ├── User.js                      
+│   │   ├── Project.js                   
+│   │   ├── ProjectMember.js             
+│   │   ├── Task.js                      
+│   │   └── Comment.js                   
 │   ├── control/
-│   │   ├── auth.controller.js           # Login, logout, getMe handlers
-│   │   ├── user.controller.js           # Admin user management & status toggling
-│   │   ├── project.controller.js        # Project CRUD & real-time task metrics
-│   │   ├── projectMember.controller.js  # Roster management & demotion safeguards
-│   │   ├── task.controller.js           # Task CRUD & Optimistic Concurrency Control
-│   │   └── comment.controller.js        # Task discussion thread management
+│   │   ├── auth.controller.js           
+│   │   ├── user.controller.js           
+│   │   ├── project.controller.js        
+│   │   ├── projectMember.controller.js  
+│   │   ├── task.controller.js           
+│   │   └── comment.controller.js        
 │   ├── routes/
 │   │   ├── auth.routes.js
 │   │   ├── user.routes.js
@@ -72,17 +72,17 @@ mern-starter/
 │   │   ├── comment.routes.js
 │   │   └── health.routes.js
 │   ├── middleware/
-│   │   ├── auth.middleware.js           # Token extraction, verification & active status check
-│   │   ├── role.middleware.js           # Role & project authorization guards
-│   │   ├── validate.middleware.js       # express-validator request handler
-│   │   └── error.middleware.js          # Centralized error handler & Mongoose CastError handler
+│   │   ├── auth.middleware.js        
+│   │   ├── role.middleware.js           
+│   │   ├── validate.middleware.js      
+│   │   └── error.middleware.js          
 │   ├── utils/
-│   │   └── jwt.js                       # JWT sign, verify & cookie helpers
+│   │   └── jwt.js                       
 │   ├── tests/
-│   │   └── api.test.js                  # 15 automated integration tests including OCC 409
-│   ├── app.js                           # Express application configuration
-│   ├── server.js                        # Database connection & server bootstrap
-│   ├── seed.js                          # Idempotent development seed script
+│   │   └── api.test.js                
+│   ├── app.js                           
+│   ├── server.js                        
+│   ├── seed.js                          
 │   ├── package.json
 │   ├── .env.example
 │   └── .gitignore
@@ -103,11 +103,11 @@ mern-starter/
 │       │   │   ├── DashboardPage.jsx
 │       │   │   ├── ProjectsPage.jsx
 │       │   │   ├── ProjectDetailPage.jsx
-│       │   │   ├── ProjectTasksPage.jsx # Kanban & Table views + OCC conflict handling
-│       │   │   ├── ProjectTeamPage.jsx  # Member management & demotion guard
-│       │   │   ├── TaskDetailPage.jsx   # Detailed task view & comments stream
-│       │   │   ├── UsersPage.jsx        # Admin user administration
-│       │   │   ├── ProfilePage.jsx      # Safe profile editing
+│       │   │   ├── ProjectTasksPage.jsx 
+│       │   │   ├── ProjectTeamPage.jsx  
+│       │   │   ├── TaskDetailPage.jsx   
+│       │   │   ├── UsersPage.jsx        
+│       │   │   ├── ProfilePage.jsx      
 │       │   │   └── NotFoundPage.jsx
 │       │   ├── routes/
 │       │   │   ├── AppRoutes.jsx
